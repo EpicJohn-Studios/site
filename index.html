@@ -4,14 +4,44 @@
     <link rel="icon" type="image/x-icon" href="data/epicface.png">
     <title>Home - EpicJohn Studios</title>
 </head>
-<body background="https://anlucas.neocities.org/starsbg.gif">
+<body background="https://web.archive.org/web/20090829024533/http://www.geocities.com/poppyrulz1/bgstar.gif" style="color: white;">
 
     <p align="center" style="color: white; font-size: 24px;"><i>Hello and Welcome to:</i></p>
     <center>
         <img src="data/headerLogo.png" />
     </center>
     <hr color="FFFFFF" />
+    <center>
+        <a href="https://epicjohn-studios.github.io/site/"><img src="data/homeBtn.png" /></a>
+        <a href="https://epicjohn-studios.github.io/site/about.html"><img src="data/aboutBtn.png" /></a>
+        <a href="https://epicjohn-studios.github.io/site/games.html"><img src="data/gamesBtn.png" /></a>
+        <a href="https://epicjohn-studios.github.io/site/contact.html"><img src="data/contactBtn.png" /></a>
+    </center>
     <hr color="FFFFFF" />
+    <br />
+    <h1 align="center" style="font-size: 42px;">Welcome to our Website</h1>
+    <p align="center">This is the OFFICIAL website for the team of EpicJohn Studios. Here you can find information about us, our games, and how to contact us! This website, if you couldn't tell, is inspired by old GeoCities websites from the 1990s to early 2000s. This is our second website, as the old one was made with wix, and I (John Fiore) wanted to code it myself. Anyways, enjoy lookin' around!</p>
+    <hr color="FFFFFF" />
+    <center>
+        <img src="data/patriotic45.gif" />
+        <p id="dateTxt"></p>
+        <p>Last Update: xx/xx/xxxx</p>
+    </center>
+    <hr color="FFFFFF" />
+    <center>
+        <p><i>&copy; Copyright EpicJohn Studios, 2022-2023</i></p>
+    </center>
+
+    <script>
+        const date = new Date();
+
+        let month = date.getMonth() + 1;
+        let day = date.getDate();
+        let year = date.getFullYear();
+
+        console.log(month + "/" + day + "/" + year);
+        document.getElementById("dateTxt").innerHTML = "Current Date: " + month + "/" + day + "/" + year;
+    </script>
 
 </body>
 </html>
